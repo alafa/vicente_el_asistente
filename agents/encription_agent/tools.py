@@ -4,6 +4,9 @@ from smolagents import tool
 def ask_what_type_of_encryption():
     """
     Asks the user what type of encryption they want to use.
+
+    Returns:
+        str: The type of encryption the user wants to use
     """
     type_of_encryption = input("What type of encryption do you want to use? (A or B)")
 
@@ -16,7 +19,7 @@ def encrypt_type_A(message: str) -> str:
     Returns a encrypted message based on the original message given.
 
     Args:
-        message: The message to be encrypted
+        message (str): The message to be encrypted
     """
     encrypted = (
         message.replace('a', 'o')
@@ -31,7 +34,7 @@ def encrypt_type_B(message: str) -> str:
     Returns a encrypted message based on the original message given.
 
     Args:
-        message: The message to be encrypted
+        message (str): The message to be encrypted
     """
     encrypted = (
         message.replace('b', 'k')
